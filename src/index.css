@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Google Sans", "Inter", "Plus Jakarta Sans", sans-serif;
+
+  --color-primary: #0ba4e0;
+  /* Extracted Logo Blue */
+  --color-secondary: #202124;
+
+  --color-google-gray: #F8F9FA;
+  --color-google-text: #202124;
+  --color-google-blue: #1a73e8;
+}
+
+@layer base {
+  body {
+    @apply text-google-text bg-white font-sans antialiased;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bdc1c6;
+}
