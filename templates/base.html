@@ -26,6 +26,35 @@
     <meta property="twitter:image" content="{{ url_for('static', filename='images/hero-bg.jpg', _external=True) }}">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="canonical" href="https://amaziweb.pythonanywhere.com{{ request.path }}" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Amazi Moto",
+      "image": [
+        "https://amaziweb.pythonanywhere.com{{ url_for('static', filename='images/hero-bg.jpg') }}"
+       ],
+      "url": "https://amaziweb.pythonanywhere.com/",
+      "telephone": "+250737515965",
+      "email": "amazimoto@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 KG 25 St",
+        "addressLocality": "Kigali",
+        "addressRegion": "Kigali City",
+        "addressCountry": "RW"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-1.95",
+        "longitude": "30.09"
+      },
+      "description": "Amazi Moto provides sustainable electric motorcycles and reliable battery swapping services in Kigali, Rwanda.",
+      "priceRange": "$$"
+    }
+    </script>
 </head>
 
 <body class="min-h-screen flex flex-col">
