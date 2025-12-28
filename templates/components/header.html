@@ -1,0 +1,36 @@
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <div class="flex items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 text-2xl font-bold tracking-tight">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Amazi Moto" class="h-12 w-auto" />
+                <span class="hidden sm:inline"><span class="logo-text font-bold transition-colors text-white">Amazi
+                        Moto</span></span>
+            </a>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-8">
+            <a href="#about"
+                class="nav-link text-sm font-medium transition-colors hover:text-primary text-white">About</a>
+            <a href="#services"
+                class="nav-link text-sm font-medium transition-colors hover:text-primary text-white">Services</a>
+            <a href="#impact"
+                class="nav-link text-sm font-medium transition-colors hover:text-primary text-white">Impact</a>
+            <a href="#stations"
+                class="nav-link text-sm font-medium transition-colors hover:text-primary text-white">Network</a>
+            <a href="#contact"
+                class="nav-link text-sm font-medium transition-colors hover:text-primary text-white">Contact</a>
+            <a href="#contact"
+                class="px-5 py-2 text-sm font-medium text-white bg-primary rounded-full hover:bg-sky-600 transition-colors shadow-sm hover:shadow-md">
+                Get Started
+            </a>
+        </nav>
+
+        <!-- Mobile Menu Button Placeholder -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 transition-colors text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+</header>
