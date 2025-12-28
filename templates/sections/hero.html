@@ -2,18 +2,22 @@
     class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-gray-900 text-white">
     <div class="absolute inset-0 bg-gray-800">
         <div class="absolute inset-0 bg-black/40 z-10"></div>
-        <img src="{{ url_for('static', filename='images/hero-bg.jpg') }}" alt="Amazi Moto Fleet"
-            class="w-full h-full object-cover" fetchpriority="high" decoding="async" />
+        <picture>
+            <source srcset="{{ url_for('static', filename='images/hero-bg.webp') }}" type="image/webp">
+            <img src="{{ url_for('static', filename='images/hero-bg.jpg') }}" alt="Amazi Moto Fleet"
+                class="w-full h-full object-cover" fetchpriority="high" decoding="async" />
+        </picture>
     </div>
 
     <div class="relative z-20 max-w-5xl mx-auto px-4 text-center">
         <h1
             class="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-200">
-            Green Transportation for East Africa
+            Green Electric Moto for Kigali, Rwanda
         </h1>
         <p class="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
-            Partnering with financial institutions to provide electric motorcycles and reliable battery-as-a-service.
-            Driving Kigali forward, sustainably.
+            Partnering with financial institutions to provide <strong>electric motorcycles</strong> and reliable
+            battery-as-a-service.
+            Driving <strong>Kigali</strong> forward, sustainably.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#services"
