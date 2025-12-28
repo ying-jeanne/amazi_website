@@ -30,5 +30,9 @@ def sitemap():
 </urlset>"""
     return content, 200, {'Content-Type': 'application/xml'}
 
+@app.route('/googlecd1cc85790141e53.html')
+def google_verification():
+    return "google-site-verification: googlecd1cc85790141e53.html"
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
